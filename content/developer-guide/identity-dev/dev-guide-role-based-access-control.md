@@ -121,6 +121,8 @@ Sample body:
 
 Set an owner on an entity to grant access for all operations on the entity regardless of the access set in the ACL. Only users and clients are valid owners for entities. Both user and client Trustee types use the `ObjectId` property to specify either the user's ID or client's ID, respectively.
 
+For example if ab user creates a STREAM then gets automatically role as Owner of the Stream . The owner then will have full access regardless of Access Control List. This means ACL will be ignored.
+
 The following code samples shows the format and structure of an owner object.
 
 **User Owner Body**
